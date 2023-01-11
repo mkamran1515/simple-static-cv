@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;600;700&display=swap');
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: green;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: green;
+  }
+
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: plum;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+}
+.container h1 {
+    font-size: 40px;
+    text-decoration: underline;
+}
+.text-section h2 {
+    margin:10px 0px;
+}
+.container img {
+    border-radius: 50%;
+    float: right;
+    width: 200px;
+    height: 200px;
+    border:1px solid black;
+}
+.container img:hover {
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.container .text-section {
+    padding: 30px 15px;
+    text-align: justify;
+}
+.container .text-section p {
+    font-size: 19px;
+}
+
+.para-section h2 {
+    text-align: left;
+    margin:15px 14px;
+    
+}
+.para-section p {
+    text-align: justify;
+    margin:0px 14px;
+    font-size: 19px;
+}
+.para-section .cv-download {
+    padding: 14px 24px;
+    border: none;
+    background-color: green;
+    border-radius: 4px;
+    outline: none;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Sofia Sans', sans-serif;
+    transition: 0.2s all;
+    display: inline-block;
+}
+
+.para-section .cv-download:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.para-section table, td, th, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin:0px 14px;
+    text-align: left;
+}
+.para-section th {
+    text-transform: uppercase;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.para-section td, th, tr {
+    padding: 10px 20px;
+}
+
+.para-section .badge-skill {
+    background-color: green;
+    color: #fff;
+    padding:5px 10px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 16px;
+    transition: 0.2s all;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 0px;
+}
+
+
+.para-section .badge-skill:hover {
+    background: slateblue;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.para-section .exper {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.social {
+    color: black;
+    height: 200px;
+    width: 200px;
+    text-align: left;
+}
+
+.toTop {
+    background-color: green;
+    color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    bottom:30px;
+    right: 30px;
+    padding: 15px 15px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.toTop .linker {
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .container img  {
+       float: none;
+    }
+}
