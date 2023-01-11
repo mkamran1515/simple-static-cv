@@ -167,6 +167,14 @@ body {
 
 @media screen and (max-width: 600px) {
     .container img  {
+       margin:10px auto;
        float: none;
+       display: block;
+    }
+    .container {
+       text-align: left;
+    }
+    .text-section p {
+        text-align: left;
     }
 }
